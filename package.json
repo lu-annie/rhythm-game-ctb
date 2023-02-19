@@ -20,7 +20,7 @@
   "homepage": "https://github.com/lu-annie/rhythm-game-ctb#readme",
   "dependencies": {
     "p5": "^1.5.0",
-    "p5.play": "^3.5.20"
+    "p5.play": "^3.6.2"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
