@@ -56,7 +56,7 @@ function gameOn() {
   y += random(2, 7);
   if (circle.collides(player)) {
     y = 0;
-    x = random(0, windowWidth);
+    x = random(1*windowWidth/4, 3*windowWidth/4);
     score += 1;
   } else if (y>windowHeight) {
     screen = 2;
@@ -98,8 +98,8 @@ function mousePressed(){
 
 function keyPressed() {
   player.y = 500;
-  if (kb.presses('left')) player.move(50, 180, 30);
-  else if (kb.presses('right')) player.move(50, 360, 30);
+  if (kb.presses('left')) player.move(50, 180, 60);
+  else if (kb.presses('right')) player.move(50, 360, 60);
   if (player.x <= 0) {
     player.x = 0;
   } else if (player.x>=windowWidth) {
@@ -110,6 +110,6 @@ function keyPressed() {
 function reset() {
   score = 0;
   y = 0;
-  x = random(0, windowWidth);
+  x = random(1*windowWidth/4, 3*windowWidth/4);
   song.stop();
 }
